@@ -1,0 +1,159 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Posting Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+
+
+
+  }
+  .head-div {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .animated-heading {
+    color: orange;
+    font-size: 30px;
+  }
+  .button-div button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button-div button:hover {
+    background-color: green;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e4eb;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #007bff;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 600px) {
+    .container {
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="head-div">
+    <h1 class="animated-heading">Job Posting Form</h1>
+  </div>
+
+  <form action="#" method="post">
+    <form action="#" method="post">
+      <label for="companyName">Company Name:</label>
+      <input type="text" id="companyName" name="companyName" required>
+      
+      <label for="contactName">Contact Name:</label>
+      <input type="text" id="contactName" name="contactName" required>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+      
+      <label for="jobTitle">Job Title:</label>
+      <input type="text" id="jobTitle" name="jobTitle" required>
+      
+      <label for="location">Job Location:</label>
+      <input type="text" id="location" name="location" required>
+      
+      <label for="jobType">Job Type:</label>
+      <select id="jobType" name="jobType" required>
+        <option value="fullTime">Full-time</option>
+        <option value="partTime">Part-time</option>
+        <option value="contract">Contract</option>
+        <option value="internship">Internship</option>
+      </select>
+      
+      <label for="deadline">Application Deadline:</label>
+      <input type="date" id="deadline" name="deadline" required>
+      
+      <!-- Add more input fields for job description, responsibilities, qualifications, etc. -->
+      
+      <div class="button-div">
+        <button type="submit">Submit</button>
+      </div>
+  
+    </form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
